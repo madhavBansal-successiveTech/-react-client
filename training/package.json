@@ -15,14 +15,12 @@
     "test:c": "react-scripts test --coverage",
     "lint":  "eslint ./src** --ext .js --ext .jsx",
     "lint-fix": "eslint ./src** --ext .js --ext .jsx --fix",
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "precommit": "npm run lint && npm run test:c",
+    "prepush": "npm run lint && npm run test:c"
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "hooks": {
-    "precommit": "npm run lint && npm run test:c",
-    "prepush": "npm run lint && npm run test:c"
   },
   "browserslist": [
     ">0.2%",

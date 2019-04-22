@@ -1,6 +1,6 @@
 
 import React from 'react';
-import TextField from '../../components'
+import { TextField } from '../../components'
 
 export default function TextFieldDemo() {
   return (

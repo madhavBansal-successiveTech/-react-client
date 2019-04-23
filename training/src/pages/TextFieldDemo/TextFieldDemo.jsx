@@ -1,10 +1,11 @@
 
 import React from 'react';
-import { TextField } from '../../components'
+import { TextField, Slider } from '../../components'
 
 export default function TextFieldDemo() {
   return (
     <div>
+      <Slider banners={["cloud.jpg", "dns-server.png", "full-stack-web-development.jpg", "js.jpg", "load-balancer.png"]} />
       <div className="TextFieldDemo-row">
         <h3>This is a Disabled Input</h3>
         <TextField disabled value="Disabled Input" />
